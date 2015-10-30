@@ -52,7 +52,7 @@ static const CGFloat kDefultHeightForAtom   = 44.0f;
         _openedIndexPath = [NSIndexPath indexPathForRow:-1 inSection:-1];
         
         _atomOrigin = CGPointMake(0, 0);
-        
+        frame.origin = CGPointZero ;//曾 - Test and to change it
         _tableView = [[UITableView alloc] initWithFrame:frame];
         _tableView.delegate         = self;
         _tableView.dataSource       = self;
